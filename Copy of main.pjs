@@ -1,0 +1,82 @@
+$meta
+  title = BACKROOMS // Organized Survival FPS
+  description = Tutorial + 15 levels, 15 entities, 22 items, 6 crafting recipes. Training gear never leaves the tutorial.
+  header
+    mode = minimal
+
+createServerSocket = {import:server-plugin}
+
+generateText = {import:ai-text-plugin}
+
+backroomLevel
+  Tutorial — How To Noclip
+  Level 0 — The Lobby
+  Level 1 — Concrete Garage
+  Level 2 — Pipe Dreams
+  Level 3 — Electrical Station
+  Level 4 — Abandoned Office
+  Level 5 — Terror Hotel
+  Level 6 — Lights Out
+  Level 7 — Poolrooms
+  Level ! — Run For Your Life
+  Level 9 — Darkrooms
+  Level Fun — Party Room
+  Level 33 — Endless Metro
+  Level 94 — Motion
+  Level 37 — Sermon
+  Level 188 — Tiled Baths
+
+backroomEntity
+  Bacteria
+  Hound
+  Smiler
+  Dullers
+  Clumps
+  Skin-Stealer
+  Partygoers
+  Mama Party
+  Death Moths
+  Facelings
+  Shadow Figure
+  Window Entity
+  The Guide
+  Wretch
+  Static Saint
+
+backroomItem
+  Almond Water
+  Energy Bar
+  Flashlight
+  Batteries
+  Bandage
+  Lantern
+  Keycard
+  Fuse
+  VHS Tape
+  Repellent
+  Radio
+  Lucky Coin
+  Backcoins
+  Coffee
+  Medkit
+  Compass
+  Night Vision
+  Adrenaline
+  Duct Tape
+  Taped Jacket
+
+backroomWeapon
+  Fists
+  Crowbar
+  Machete
+  Pipe Wrench
+  Fire Axe
+  Almond Darts
+  Stun Lantern
+  Katana
+  Nailgun
+  Almond Shotgun
+  Scrap Spear
+  Crossbow
+
+$output = [backroomLevel]: a [backroomEntity] stalks you near [backroomItem]. Grab [backroomWeapon].
