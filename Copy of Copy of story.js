@@ -32,5 +32,6 @@ mama:{name:"Mama Down",desc:"Kill Mama Party"},
 pacifist:{name:"Ghost",desc:"Escape a level with 0 kills"},
 rich:{name:"Hoarder",desc:"Hold 20 backcoins"},
 crafter:{name:"Tinkerer",desc:"Craft anything"},
+quartermaster:{name:"Quartermaster",desc:"Open 3 military crates"},
 guide:{name:"Guided",desc:"Meet The Guide"},
 };

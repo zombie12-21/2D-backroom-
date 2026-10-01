@@ -1,20 +1,20 @@
 export const LEVELS=[
 {id:"T",name:"Tutorial — How To Noclip",sub:"small training room, no risk",wall:0xb8a45a,floor:0x8a7648,ceil:0xcbbd7f,fog:0x141003,fogD:26,size:5,entity:"bacteria",loot:["almond_water","energy_bar","batteries","crowbar"],exit:"training_door",tip:"WASD move · E grab · Click attack · Reach exit. Nothing you grab here leaves with you.",bright:1,tutorial:true},
-{id:0,name:"Level 0 — The Lobby",sub:"mono-yellow, humming fluorescents",wall:0xb8a45a,floor:0x8a7648,ceil:0xcbbd7f,fog:0x141003,fogD:26,size:21,entity:"bacteria",loot:["almond_water","energy_bar","batteries","flashlight","crowbar"],exit:"stair",tip:"Find the stairwell. Almond water stops sanity drain.",bright:1},
-{id:1,name:"Level 1 — Concrete Garage",sub:"fog, concrete, entity dogs",wall:0x6b6b6b,floor:0x3d3d3d,ceil:0x555555,fog:0x0a0a0a,fogD:30,size:23,entity:"hound",loot:["almond_water","bandage","pipe_wrench","batteries","keycard_l1"],exit:"garage_door",tip:"Hounds hear sprinting. Walk when close.",bright:.8},
-{id:2,name:"Level 2 — Pipe Dreams",sub:"hot service tunnels",wall:0x5a4a3a,floor:0x3a332a,ceil:0x4a4238,fog:0x0d0803,fogD:24,size:23,entity:"dullers",loot:["almond_water","machete","fuse","lantern"],exit:"pipe_exit",tip:"Collect 2 FUSES to power the exit door.",bright:.7,needFuse:2},
-{id:3,name:"Level 3 — Electrical Station",sub:"dark + smilers in wires",wall:0x3a3f4a,floor:0x22242a,ceil:0x2c2e36,fog:0x030304,fogD:18,size:25,entity:"smiler",loot:["batteries","lantern","stun_lantern","almond_water","fuse"],exit:"breaker",tip:"Smilers fear light. Keep flashlight ON.",bright:.45,needFuse:2},
-{id:4,name:"Level 4 — Abandoned Office",sub:"cubicles, facelings roam",wall:0x7a7a72,floor:0x4a4a44,ceil:0x9a9a8e,fog:0x0c0c08,fogD:28,size:23,entity:"clumps",loot:["energy_bar","bandage","fire_axe","tape","keycard_l2"],exit:"office_exit",tip:"Clumps sleep unless touched. Crouch-walk around.",bright:.75},
+{id:0,name:"Level 0 — The Lobby",sub:"mono-yellow, humming fluorescents",wall:0xb8a45a,floor:0x8a7648,ceil:0xcbbd7f,fog:0x141003,fogD:26,size:21,entity:"bacteria",loot:["almond_water","energy_bar","batteries","flashlight","crowbar","canned_beans","nail_bat"],exit:"stair",tip:"Find the stairwell. Almond water stops sanity drain.",bright:1},
+{id:1,name:"Level 1 — Concrete Garage",sub:"fog, concrete, entity dogs",wall:0x6b6b6b,floor:0x3d3d3d,ceil:0x555555,fog:0x0a0a0a,fogD:30,size:23,entity:"hound",loot:["almond_water","bandage","pipe_wrench","batteries","keycard_l1","smoke_bomb","bear_trap"],exit:"garage_door",tip:"Hounds hear sprinting. Walk when close.",bright:.8},
+{id:2,name:"Level 2 — Pipe Dreams",sub:"hot service tunnels",wall:0x5a4a3a,floor:0x3a332a,ceil:0x4a4238,fog:0x0d0803,fogD:24,size:23,entity:"dullers",loot:["almond_water","machete","fuse","lantern","flamethrower"],exit:"pipe_exit",tip:"Collect 2 FUSES to power the exit door.",bright:.7,needFuse:2},
+{id:3,name:"Level 3 — Electrical Station",sub:"dark + smilers in wires",wall:0x3a3f4a,floor:0x22242a,ceil:0x2c2e36,fog:0x030304,fogD:18,size:25,entity:"smiler",loot:["batteries","lantern","stun_lantern","almond_water","fuse","flare","gas_mask"],exit:"breaker",tip:"Smilers fear light. Keep flashlight ON.",bright:.45,needFuse:2},
+{id:4,name:"Level 4 — Abandoned Office",sub:"cubicles, facelings roam",wall:0x7a7a72,floor:0x4a4a44,ceil:0x9a9a8e,fog:0x0c0c08,fogD:28,size:23,entity:"clumps",loot:["energy_bar","bandage","fire_axe","tape","keycard_l2","bear_trap","smoke_bomb","canned_beans"],exit:"office_exit",tip:"Clumps sleep unless touched. Crouch-walk around.",bright:.75},
 {id:5,name:"Level 5 — Terror Hotel",sub:"carpet, doors, skin-stealers",wall:0x6a2a2a,floor:0x3a1a1a,ceil:0x7a5a3a,fog:0x0d0303,fogD:22,size:25,entity:"skinstealer",loot:["almond_water","repellent","machete","keycard_l2"],exit:"room_403",tip:"Check doors. One room-403 key glows gold.",bright:.6},
-{id:6,name:"Level 6 — Lights Out",sub:"pitch black, partygoers",wall:0x111111,floor:0x0a0a0a,ceil:0x050505,fog:0x000000,fogD:11,size:21,entity:"party",loot:["lantern","batteries","almond_darts","radio"],exit:"slide",tip:"No sprint. Listen for balloons. Light = life.",bright:.22},
-{id:7,name:"Level 7 — Poolrooms",sub:"tile + water, death moths",wall:0x9adbe8,floor:0x4a9ab0,ceil:0xd8f4ff,fog:0x06222c,fogD:32,size:25,entity:"moths",loot:["almond_water","bandage","lucky_coin","energy_bar"],exit:"pool_hole",tip:"Moths guard the deep hole. Throw repellent (use item).",bright:1.1},
-{id:8,name:"Level ! — Run For Your Life",sub:"!",wall:0xc02020,floor:0x222222,ceil:0x331111,fog:0x0d0000,fogD:24,size:27,entity:"party",loot:["energy_bar","almond_water","fire_axe","coffee","medkit"],exit:"final_door",tip:"RUN. No fighting. Reach the white door.",bright:.6},
-{id:9,name:"Level 9 — Darkrooms",sub:"pure black suburb",wall:0x1a1a1a,floor:0x0d0d0d,ceil:0x000000,fog:0x000000,fogD:10,size:25,entity:"shadow",loot:["nightvision","batteries","compass","katana","coffee"],exit:"lamp_post",tip:"Shadow copies your moves. Nightvision + never stop.",bright:.18},
-{id:10,name:"Level Fun — Party Room",sub:"=) cake and balloons",wall:0xffd34d,floor:0x8a6a1a,ceil:0xfff0a0,fog:0x0d0800,fogD:22,size:25,entity:"party",loot:["repellent","shotgun","medkit","radio","almond_water"],exit:"cake_door",tip:"2 Partygoers. Shotgun + repellent. Aim for the cake.",bright:.8,double:true},
-{id:11,name:"Level 33 — Endless Metro",sub:"tunnels + windows",wall:0x3a4a3a,floor:0x2a2a2a,ceil:0x222222,fog:0x020603,fogD:20,size:27,entity:"window",loot:["nailgun","batteries","fuse","compass","coffee"],exit:"last_train",tip:"Window Entity lives in glass. 3 FUSES. Don't look at windows.",bright:.4,needFuse:3},
+{id:6,name:"Level 6 — Lights Out",sub:"pitch black, partygoers",wall:0x111111,floor:0x0a0a0a,ceil:0x050505,fog:0x000000,fogD:11,size:21,entity:"party",loot:["lantern","batteries","almond_darts","radio","flare","smoke_bomb","gas_mask"],exit:"slide",tip:"No sprint. Listen for balloons. Light = life.",bright:.22},
+{id:7,name:"Level 7 — Poolrooms",sub:"tile + water, death moths",wall:0x9adbe8,floor:0x4a9ab0,ceil:0xd8f4ff,fog:0x06222c,fogD:32,size:25,entity:"moths",loot:["almond_water","bandage","lucky_coin","energy_bar","canned_beans","smoke_bomb"],exit:"pool_hole",tip:"Moths guard the deep hole. Throw repellent (use item).",bright:1.1},
+{id:8,name:"Level ! — Run For Your Life",sub:"!",wall:0xc02020,floor:0x222222,ceil:0x331111,fog:0x0d0000,fogD:24,size:27,entity:"party",loot:["energy_bar","almond_water","fire_axe","coffee","medkit","molotov","flare","rifle","flamethrower"],exit:"final_door",tip:"RUN. No fighting. Reach the white door.",bright:.6},
+{id:9,name:"Level 9 — Darkrooms",sub:"pure black suburb",wall:0x1a1a1a,floor:0x0d0d0d,ceil:0x000000,fog:0x000000,fogD:10,size:25,entity:"shadow",loot:["nightvision","batteries","compass","katana","coffee","bear_trap","gas_mask"],exit:"lamp_post",tip:"Shadow copies your moves. Nightvision + never stop.",bright:.18},
+{id:10,name:"Level Fun — Party Room",sub:"=) cake and balloons",wall:0xffd34d,floor:0x8a6a1a,ceil:0xfff0a0,fog:0x0d0800,fogD:22,size:25,entity:"party",loot:["repellent","shotgun","medkit","radio","almond_water","molotov","flare","nail_bat","rifle"],exit:"cake_door",tip:"2 Partygoers. Shotgun + repellent. Aim for the cake.",bright:.8,double:true},
+{id:11,name:"Level 33 — Endless Metro",sub:"tunnels + windows",wall:0x3a4a3a,floor:0x2a2a2a,ceil:0x222222,fog:0x020603,fogD:20,size:27,entity:"window",loot:["nailgun","batteries","fuse","compass","coffee","molotov","bear_trap","rifle"],exit:"last_train",tip:"Window Entity lives in glass. 3 FUSES. Don't look at windows.",bright:.4,needFuse:3},
 {id:12,name:"Level 94 — Motion",sub:"endless white halls that move",wall:0xd8d8d0,floor:0xb0b0a8,ceil:0xffffff,fog:0x111008,fogD:30,size:25,entity:"wretch",loot:["adrenaline","bandage","spear","duct_tape","compass"],exit:"still_door",tip:"The halls drift. Wretches track motion — stand still to vanish.",bright:.9},
-{id:13,name:"Level 37 — Sermon",sub:"drowned chapel + static",wall:0x2a2a3a,floor:0x141420,ceil:0x1a1a2a,fog:0x030308,fogD:16,size:25,entity:"static",loot:["crossbow","batteries","duct_tape","medkit","tape"],exit:"pulpit",tip:"Static hunts by flashlight. Go dark, use nightvision.",bright:.3,needFuse:1},
-{id:14,name:"Level 188 — Tiled Baths",sub:"steam, stalls, knocking",wall:0x7ab0b0,floor:0x3a6a6a,ceil:0xc0e8e8,fog:0x041414,fogD:24,size:23,entity:"clumps",loot:["spear","repellent","adrenaline","jacket","almond_water"],exit:"drain",tip:"Knocking means clumps. Throw radio, slip past.",bright:.7}
+{id:13,name:"Level 37 — Sermon",sub:"drowned chapel + static",wall:0x2a2a3a,floor:0x141420,ceil:0x1a1a2a,fog:0x030308,fogD:16,size:25,entity:"static",loot:["crossbow","batteries","duct_tape","medkit","tape","flare","gas_mask"],exit:"pulpit",tip:"Static hunts by flashlight. Go dark, use nightvision.",bright:.3,needFuse:1},
+{id:14,name:"Level 188 — Tiled Baths",sub:"steam, stalls, knocking",wall:0x7ab0b0,floor:0x3a6a6a,ceil:0xc0e8e8,fog:0x041414,fogD:24,size:23,entity:"clumps",loot:["spear","repellent","adrenaline","jacket","almond_water","canned_beans","smoke_bomb"],exit:"drain",tip:"Knocking means clumps. Throw radio, slip past.",bright:.7}
 ];
 export const ENTITIES={
 bacteria:{name:"Bacteria",icon:"🦠",hp:60,speed:3.1,dmg:12,color:0x9aa088,weak:"almond",desc:"Wired humanoid. Warded by almond smell. Melee it with crowbar+.",quote:"It clicks before it sprints."},
@@ -58,14 +58,23 @@ medkit:{name:"Medkit",icon:"💊",type:"heal",heal:80,use:"+80 HP full restore."
 compass:{name:"Compass",icon:"🧭",type:"buff",use:"Passive: arrow points to exit.",desc:"Spins near entities."},
 nightvision:{name:"Night Vision",icon:"🥽",type:"tool",use:"Passive: see in dark + reveal Shadow.",desc:"Green glow. Battery-free."},
 katana:{name:"Katana",icon:"🗡️",type:"weapon",desc:"Very fast, long blade."},
-nailgun:{name:"Nailgun",icon:"🔫",type:"weapon",desc:"Ranged nails. Uses batteries."},
+nailgun:{name:"Nailgun",icon:"🔩",type:"weapon",desc:"Ranged nails. Uses batteries."},
 shotgun:{name:"Almond Shotgun",icon:"💥",type:"weapon",desc:"Spread blast. Devastating close."},
 backcoin:{name:"Backcoin",icon:"🪙",type:"coin",use:"+1 Backcoin. Traders in safe rooms take them.",desc:"Stamped bottleneck cap. Real money here."},
 adrenaline:{name:"Adrenaline",icon:"💉",type:"stam",heal:100,use:"+100 stamina, +25 HP, speed 20s.",desc:"Military stim. Burns bright."},
 duct_tape:{name:"Duct Tape",icon:"🩹",type:"tool",use:"Crafting glue. Keep 2+.",desc:"Fixes everything, even spears."},
 jacket:{name:"Taped Jacket",icon:"🧥",type:"buff",use:"Passive: -40% damage.",desc:"Layers of tape and carpet."},
 spear:{name:"Scrap Spear",icon:"🦯",type:"weapon",desc:"Long reach. Quiet."},
-crossbow:{name:"Crossbow",icon:"🏹",type:"weapon",desc:"Silent bolts. Long range."}
+crossbow:{name:"Crossbow",icon:"🏹",type:"weapon",desc:"Silent bolts. Long range."},
+flare:{name:"Flare",icon:"🧨",type:"throw",use:"Blast of light: burns + stuns everything near.",desc:"Burns magenta. Entities hate it."},
+smoke_bomb:{name:"Smoke Bomb",icon:"💨",type:"throw",use:"Choking cloud: long stun, shoves chasers off.",desc:"Smells like Poolrooms chlorine."},
+bear_trap:{name:"Bear Trap",icon:"🪤",type:"tool",use:"Press slot to SET at feet. 80 dmg to first stepper.",desc:"Rusty. Still hungry."},
+gas_mask:{name:"Gas Mask",icon:"😷",type:"buff",use:"Passive: sanity drains slower in the dark.",desc:"Smells like old rubber. Worth it."},
+molotov:{name:"Molotov",icon:"🍾",type:"throw",use:"Fire blast: heavy area burn + scorch.",desc:"Almond water was inside. Was."},
+canned_beans:{name:"Canned Beans",icon:"🥫",type:"stam",heal:40,use:"+40 stamina, +25 HP.",desc:"Best-by date: Level 0."},
+rifle:{name:"Assault Rifle",icon:"🔫",type:"weapon",desc:"Rapid fire. Eats batteries."},
+flamethrower:{name:"Flamethrower",icon:"🔥",type:"weapon",desc:"Cone of burn. Battery-guzzler."},
+nail_bat:{name:"Nail Bat",icon:"🏏",type:"weapon",desc:"Knockback king. SENDS them."}
 };
 export const WEAPONS={
 fists:{name:"Fists",icon:"👊",dmg:8,range:2.2,cd:.45,desc:"Always with you."},
@@ -76,8 +85,11 @@ fire_axe:{name:"Fire Axe",icon:"🪓",dmg:55,range:2.8,cd:1.1,desc:"One-shots mo
 almond_darts:{name:"Almond Darts",icon:"🎯",dmg:40,range:14,cd:1,ammo:true,desc:"Ranged. Bacteria/moths melt."},
 stun_lantern:{name:"Stun Lantern",icon:"💡",dmg:5,range:9,cd:3,stun:5,desc:"Burst blinds + stuns 5s."},
 katana:{name:"Katana",icon:"🗡️",dmg:38,range:3,cd:.4,desc:"Fastest melee. Slices moths/shadows."},
-nailgun:{name:"Nailgun",icon:"🔫",dmg:28,range:14,cd:.7,ammo:true,desc:"Ranged. Drains battery per shot."},
+nailgun:{name:"Nailgun",icon:"🔩",dmg:28,range:14,cd:.7,ammo:true,desc:"Ranged. Drains battery per shot."},
 shotgun:{name:"Almond Shotgun",icon:"💥",dmg:70,range:3.4,cd:1.3,desc:"Close spread. 3x pellets vs party."},
 spear:{name:"Scrap Spear",icon:"🦯",dmg:34,range:3.6,cd:.7,desc:"Long reach. Craft: crowbar+tape."},
-crossbow:{name:"Crossbow",icon:"🏹",dmg:46,range:15,cd:1.2,ammo:true,desc:"Silent. Long range, no battery."}
+crossbow:{name:"Crossbow",icon:"🏹",dmg:46,range:15,cd:1.2,ammo:true,desc:"Silent. Long range, no battery."},
+rifle:{name:"Assault Rifle",icon:"🔫",dmg:22,range:16,cd:.18,ammo:true,desc:"Rapid fire. 2 battery per burst."},
+flamethrower:{name:"Flamethrower",icon:"🔥",dmg:25,range:4.5,cd:.25,desc:"Cone burn + stun. 4 battery per blast."},
+nail_bat:{name:"Nail Bat",icon:"🏏",dmg:30,range:3,cd:.6,desc:"Big knockback. Crowd control."}
 };

@@ -12,7 +12,7 @@ ctx.beginPath();ctx.arc(0,0,12,0,7);ctx.fill();ctx.stroke();
 ctx.fillStyle="#31435f";ctx.fillRect(-14,-7,7,14);
 ctx.fillStyle="#c9a87a";ctx.beginPath();ctx.arc(2,0,6,0,7);ctx.fill();
 ctx.fillStyle="#222";ctx.beginPath();ctx.arc(2,0,6,0,7);ctx.stroke();
-let gun=wid==="shotgun"||wid==="nailgun"||wid==="crossbow"||wid==="almond_darts";
+let gun=wid==="shotgun"||wid==="nailgun"||wid==="crossbow"||wid==="almond_darts"||wid==="rifle"||wid==="flamethrower";
 let hx=gun?12:14,hy=6;
 ctx.fillStyle="#c9a87a";
 ctx.beginPath();ctx.arc(hx,hy,4,0,7);ctx.fill();
@@ -45,6 +45,9 @@ if(wid==="fire_axe")return 36;
 if(wid==="machete")return 38;
 if(wid==="crowbar")return 36;
 if(wid==="pipe_wrench")return 34;
+if(wid==="rifle")return 46;
+if(wid==="flamethrower")return 40;
+if(wid==="nail_bat")return 34;
 return 22;
 }
 function drawGun(ctx,wid,t,sw){
@@ -127,6 +130,29 @@ ctx.fillStyle="#5a3a1a";ctx.fillRect(6,-2,32,5);
 ctx.strokeStyle="#111";ctx.lineWidth=4;ctx.beginPath();ctx.moveTo(30,0);ctx.quadraticCurveTo(20,-12,12,-14);ctx.moveTo(30,0);ctx.quadraticCurveTo(20,12,12,14);ctx.stroke();
 ctx.strokeStyle="#ddd";ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(12,-14);ctx.lineTo(12,14);ctx.stroke();
 ctx.fillStyle="#d8dce2";ctx.fillRect(10,-1,28,2);
+return;
+}
+if(wid==="rifle"){
+ctx.fillStyle="#3a3f46";ctx.fillRect(6,-4,30,7);
+ctx.fillStyle="#222";ctx.fillRect(36,-2,10,4);
+ctx.fillStyle="#5a3a1a";ctx.fillRect(14,3,6,9);
+ctx.fillStyle="#222";ctx.fillRect(24,-8,4,5);
+ctx.fillStyle="#999";ctx.fillRect(8,-3,6,2);
+return;
+}
+if(wid==="flamethrower"){
+ctx.fillStyle="#7a2020";ctx.fillRect(4,-5,12,10);
+ctx.fillStyle="#555";ctx.fillRect(16,-3,20,5);
+ctx.fillStyle="#222";ctx.fillRect(34,-2,6,4);
+ctx.fillStyle=t<0.2?"#ffef9a":"#ff9500";ctx.beginPath();ctx.arc(38,0,2.5,0,7);ctx.fill();
+ctx.fillStyle="#c9a227";ctx.fillRect(6,-6,8,2);
+return;
+}
+if(wid==="nail_bat"){
+ctx.fillStyle="#8a6238";ctx.fillRect(6,-3,26,6);
+ctx.fillStyle="#6a4a28";ctx.fillRect(6,-3,7,6);
+ctx.fillStyle="#999";ctx.fillRect(20,-6,2,4);ctx.fillRect(25,2,2,4);ctx.fillRect(29,-6,2,4);
+ctx.fillStyle="#222";ctx.fillRect(4,-4,4,8);
 return;
 }
 ctx.fillStyle="#666";ctx.fillRect(8,-2,16,4);
